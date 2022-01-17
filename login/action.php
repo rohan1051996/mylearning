@@ -14,7 +14,7 @@ if(isset($_POST['action'])){
 }
 
 
-
+//added switch for multiple operation
 switch($action){
 
 	case 'login':
