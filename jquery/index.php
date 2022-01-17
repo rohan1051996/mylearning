@@ -6,6 +6,6 @@
 	<title>Document</title>
 </head>
 <body>
-	<h1>Welcome to Jquery</h1>
+	<h1>Welcome to my new Jquery</h1>
 </body>
 </html>
