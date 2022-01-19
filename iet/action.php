@@ -20,33 +20,25 @@ switch ($action) {
 			}else{
 				header("location:login.php?msg=invalid user login");
 				exit();
-			}
+			}/*
 			
 			print "<pre>";
 			print_r($result);
-			die();
+			die();*/
 		
 
+		break;
+
+		case 'registration':
+			print "<pre>";
+			print_r($_POST);
+			die();
 		break;
 	
 	default:
 		// code...
 		break;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ?>
