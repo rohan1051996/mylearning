@@ -30,6 +30,7 @@ switch ($action) {
 		break;
 
 		case 'registration':
+		
 			print "<pre>";
 			print_r($_POST);
 			die();
