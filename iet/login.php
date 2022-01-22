@@ -25,15 +25,20 @@
 			</div>
 			<div class="card-body">
 				<?php if(isset($_GET['msg'])){?>
+					<?php if(stripos($_GET['msg'], 'successfully')>0){?>
+						<div class="alert alert-success"><?php echo $_GET['msg'];?></div>
+					<?php }else{?>
 				<div class="alert alert-danger"><?php echo $_GET['msg'];?></div>
-			<?php }?>
+			<?php }
+			}?>
+
 				<form action="action.php" method="post">
 					<input type="hidden" name="action" value="login">
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
-							<span class="input-group-text"><i class="fas fa-user"></i></span>
+							<span class="input-group-text"><i class="fas fa-phone"></i></span>
 						</div>
-						<input type="text" name="mobile_number" class="form-control" placeholder="Enter mobile number">
+						<input type="number" name="mobile_number" class="form-control" placeholder="Enter mobile number">
 						
 					</div>
 					<div class="input-group form-group">
